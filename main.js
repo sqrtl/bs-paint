@@ -59,12 +59,15 @@ while (count <= gridWidth * gridWidth) {
 /****************************
  * EVENT LISTENER FUNCTIONS *
 ****************************/
+//Changing the color of the brush
+for(let i = 0; i < color.length; i++){
+  color[i].addEventListener('click', function(){
+    brushColor.className = ('current-brush color-' + (i+1));
+    // brushColor.classList.add('color- '+ i);
+    console.log(brushColor.className);
 
-// Now add some functions to handle clicking one particular square
-// and clicking one particular palette color. You can leave them
-// empty at first, though a console.log just to know they're being
-// run as event listeners (after the next step is set up) isn't a
-// bad idea for testing purposes.
+  })
+}
 
 
 
