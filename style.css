@@ -1,20 +1,27 @@
 .app {
   display: flex;
+  flex-direction: column;
   height: 500px;
+  
+  text-align: center;
 }
 
 .headings {
   display: flex;
+  flex-direction: column;
 }
 
 .brush-selection {
   height: 70px;
   display: flex;
+  justify-content: center;
 }
 
 .paint {
   height: 250px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .palette {
@@ -39,6 +46,7 @@
 
 .canvas {
   display: grid;
+  justify-content: center;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(10, 1fr);
   height: 300px;
@@ -51,21 +59,21 @@
 }
 
 .color-1 {
-
+  background-color: yellow;
 }
 
 .color-2 {
-
+  background-color: red;
 }
 
 .color-3 {
-
+  background-color: skyblue;
 }
 
 .color-4 {
-
+  background-color: #046307;
 }
 
 .color-5 {
-
+  background-color: whitesmoke;
 }

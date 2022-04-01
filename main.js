@@ -1,3 +1,7 @@
+const color = document.querySelectorAll('.palette-color');
+const brushColor = document.querySelector('.current-brush');
+let canvasSquare = document.querySelectorAll('.square');
+const gridWidth = 10;
 /*******************
  * OUR HELPER CODE *
 *******************/
@@ -15,7 +19,7 @@
  * To make the second one happen, the number to change
  * is the first argument to `repeat`, currently set at 10.
  */
-const gridWidth = 10;
+
 let count = 0;
 while (count <= gridWidth * gridWidth) {
   const canvas = document.querySelector('.canvas');
@@ -24,6 +28,7 @@ while (count <= gridWidth * gridWidth) {
   canvas.appendChild(div);
   count++;
 }
+
 
 // You probably should NOT do these in the order below.
 // That is, you probably should NOT do all the queries,
